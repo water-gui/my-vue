@@ -9,7 +9,7 @@
     </div>
     <div class="jiugg">
       <van-grid :column-num="3">
-        <van-grid-item v-for="grid in grids" :key="grid.id" :text="grid.title" props="grid">
+        <van-grid-item v-for="grid in grids" :key="grid.id" :text="grid.title" props="grid" :to="grid.to">
           <template slot="icon">
             <img :src="grid.src" alt="">
           </template>
@@ -55,5 +55,9 @@ export default {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+}
+.lunbo{
+  width: 360px;
+  overflow: hidden;
 }
 </style>
