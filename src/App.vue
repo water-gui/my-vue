@@ -12,8 +12,8 @@
     </transition>
     <van-tabbar v-model="active">
   <van-tabbar-item icon="home-o" to="/home">home</van-tabbar-item>
-  <van-tabbar-item icon="search" dot to="/cart">cart</van-tabbar-item>
-  <van-tabbar-item icon="friends-o" info="5" to="/friends">friends</van-tabbar-item>
+  <van-tabbar-item icon="search" dot to="/friends">friends</van-tabbar-item>
+  <van-tabbar-item icon="friends-o" :info="$store.getters.getAllCount" to="/cart">cart</van-tabbar-item>
   <van-tabbar-item icon="setting-o" info="20" to="/search">search</van-tabbar-item>
 </van-tabbar>
   </div>
